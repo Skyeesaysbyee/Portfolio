@@ -241,7 +241,7 @@ a {
   border: 1px solid var(--line);
   background:
     linear-gradient(0deg, rgba(9, 11, 23, 0.15), rgba(9, 11, 23, 0.05)),
-    url('about-me.jpg') center / cover no-repeat,
+    url('aboutme.jpg') center / cover no-repeat,
     #171b31;
   box-shadow: 16px 16px 0 rgba(164, 124, 255, 0.08);
 }
