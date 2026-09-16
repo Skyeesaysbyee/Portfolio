@@ -1,44 +1,367 @@
-<section id="about" class="about section-shell">
-  <div class="about-photo-wrap">
-    <p class="section-number">01 / ABOUT</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <figure class="about-image-card">
-      <img
-        src="./about-me.jpg?v=3"
-        alt="Skyee Bucholz and his girlfriend in Japan">
+    <meta
+        name="description"
+        content="The personal portfolio of Skyee Bucholz, a student at Portland State University."
+    >
 
-      <figcaption>
-        <span>TOKYO, JAPAN</span>
-        <span>2026</span>
-      </figcaption>
-    </figure>
+    <meta name="theme-color" content="#080b18">
 
-    <div class="photo-note">CURRENTLY AT PSU</div>
-  </div>
+    <title>Skyee Bucholz | Portfolio</title>
 
-  <div class="about-copy">
-    <p class="kicker">ABOUT ME</p>
+    <link rel="stylesheet" href="style.css">
 
-    <h2>I enjoy a little bit of everything.</h2>
+    <!-- Interactive map files -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+</head>
 
-    <p>
-      My name is Skyee Bucholz. I enjoy a little bit of everything.
-      I love history, politics, geography, cars, music, gaming,
-      cinematography, the list could go on forever. I feel like I get
-      along with everybody. I try my best to be someone that everyone
-      would want to be with. I love figuring out problems and explaining
-      things to people willing to listen. I am currently a student at PSU.
-      I’ll be president one day.
-    </p>
+<body>
 
-    <div class="button-row">
-      <a class="button primary" href="resume.html">
-        View résumé <span>↗</span>
-      </a>
+    <header class="site-header">
+        <a class="logo" href="#top">
+            SKYEE<span>.</span>
+        </a>
 
-      <a class="button secondary" href="proud.html">
-        What I’m proud of <span>↗</span>
-      </a>
-    </div>
-  </div>
-</section>
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#pages">Pages</a>
+            <a href="#travel">Travel</a>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-grid"></div>
+
+            <div class="hero-content">
+                <p class="hero-small">PORTLAND STATE UNIVERSITY</p>
+
+                <h1>
+                    SKYEE<br>
+                    <span>BUCHOLZ</span>
+                </h1>
+
+                <p class="hero-description">
+                    This is my portfolio. It has some stuff about me,
+                    my projects, my goals, my car, and other things I like.
+                </p>
+
+                <a class="hero-button" href="#about">
+                    About me
+                    <span>↓</span>
+                </a>
+            </div>
+
+            <div class="hero-side-text">
+                <span>PORTLAND, OREGON</span>
+                <span>EST. 2026</span>
+            </div>
+
+            <div class="hero-sun" aria-hidden="true"></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about section-shell">
+
+            <div class="about-photo-wrap">
+                <p class="section-number">01 / ABOUT</p>
+
+                <figure class="about-image-card">
+                    <img
+                        src="./about-me.jpg?v=3"
+                        alt="Skyee Bucholz and his girlfriend in Japan"
+                    >
+
+                    <figcaption>
+                        <span>TOKYO, JAPAN</span>
+                        <span>2026</span>
+                    </figcaption>
+                </figure>
+
+                <div class="photo-note">
+                    CURRENTLY AT PSU
+                </div>
+            </div>
+
+            <div class="about-copy">
+                <p class="kicker">ABOUT ME</p>
+
+                <h2>I enjoy a little bit of everything.</h2>
+
+                <p>
+                    My name is Skyee Bucholz. I enjoy a little bit of
+                    everything. I love history, politics, geography, cars,
+                    music, gaming, cinematography, the list could go on
+                    forever. I feel like I get along with everybody. I try
+                    my best to be someone that everyone would want to be
+                    with. I love figuring out problems and explaining things
+                    to people willing to listen. I am currently a student at
+                    PSU. I’ll be president one day.
+                </p>
+
+                <div class="button-row">
+                    <a class="button primary" href="resume.html">
+                        View résumé
+                        <span>↗</span>
+                    </a>
+
+                    <a class="button secondary" href="proud.html">
+                        What I’m proud of
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PAGE BUTTONS -->
+        <section id="pages" class="pages-section section-shell">
+
+            <div class="section-heading">
+                <p class="section-number">02 / PAGES</p>
+                <p class="kicker">OTHER STUFF</p>
+
+                <h2>Things I wanted to put on here.</h2>
+            </div>
+
+            <div class="page-grid">
+
+                <a class="page-card projects-card" href="projects.html">
+                    <span class="page-card-number">01</span>
+
+                    <div>
+                        <p>SCHOOL + PERSONAL</p>
+                        <h3>Projects</h3>
+                    </div>
+
+                    <span class="page-arrow">↗</span>
+                </a>
+
+                <a class="page-card goals-card" href="goals.html">
+                    <span class="page-card-number">02</span>
+
+                    <div>
+                        <p>WHAT I WANT TO DO</p>
+                        <h3>Life goals</h3>
+                    </div>
+
+                    <span class="page-arrow">↗</span>
+                </a>
+
+                <a class="page-card car-card" href="car.html">
+                    <span class="page-card-number">03</span>
+
+                    <div>
+                        <p>1980s TOYOTA</p>
+                        <h3>My car</h3>
+                    </div>
+
+                    <span class="page-arrow">↗</span>
+                </a>
+
+                <a class="page-card social-card" href="social.html">
+                    <span class="page-card-number">04</span>
+
+                    <div>
+                        <p>WHERE I POST</p>
+                        <h3>Social media</h3>
+                    </div>
+
+                    <span class="page-arrow">↗</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- TRAVEL MAP -->
+        <section id="travel" class="travel-section">
+
+            <div class="section-shell">
+                <div class="section-heading travel-heading">
+                    <p class="section-number">03 / TRAVEL</p>
+                    <p class="kicker">PLACES I HAVE BEEN</p>
+
+                    <h2>I want to see more of the world.</h2>
+
+                    <p class="map-instructions">
+                        Hover over the pink countries to see what I did there.
+                    </p>
+                </div>
+
+                <div class="map-frame">
+                    <div id="chartdiv" aria-label="Interactive travel map"></div>
+
+                    <div class="map-key">
+                        <span class="map-key-color"></span>
+                        PLACES I HAVE BEEN
+                    </div>
+                </div>
+
+                <div class="travel-cards">
+
+                    <article class="travel-card">
+                        <span>01</span>
+                        <p class="country-code">USA</p>
+                        <h3>United States</h3>
+                        <p>
+                            Born and raised in the U.S. I have explored
+                            13 out of 50 states so far.
+                        </p>
+                    </article>
+
+                    <article class="travel-card">
+                        <span>02</span>
+                        <p class="country-code">MEX</p>
+                        <h3>Mexico</h3>
+                        <p>
+                            I went to Mexico on a cruise tour. We did not
+                            do very much, but it still counts.
+                        </p>
+                    </article>
+
+                    <article class="travel-card">
+                        <span>03</span>
+                        <p class="country-code">CAN</p>
+                        <h3>Canada</h3>
+                        <p>
+                            I spent a week in Vancouver. It was really fun
+                            being in the city, staying out, and walking around.
+                        </p>
+                    </article>
+
+                    <article class="travel-card">
+                        <span>04</span>
+                        <p class="country-code">JPN</p>
+                        <h3>Japan</h3>
+                        <p>
+                            I went to Kyoto, Tokyo, Kanazawa, Toyama,
+                            Takayama, and Osaka on a school trip. I met up
+                            with my girlfriend and got an OM tattoo.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE -->
+        <section class="quote-section section-shell">
+            <p class="kicker">A QUOTE I LIKE</p>
+
+            <blockquote>
+                “I’m a travelin’ man, movin’ through places... space and time.”
+            </blockquote>
+
+            <p class="quote-followup">
+                I still have a lot of places to go, but I always want
+                somewhere to come back to.
+            </p>
+
+            <cite>— Mac Miller, excerpt</cite>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>MADE BY SKYEE BUCHOLZ</p>
+        <p>PORTLAND, OREGON · 2026</p>
+
+        <a href="#top">
+            BACK TO TOP ↑
+        </a>
+    </footer>
+
+    <script>
+        am5.ready(function () {
+            const root = am5.Root.new("chartdiv");
+
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+            const chart = root.container.children.push(
+                am5map.MapChart.new(root, {
+                    panX: "rotateX",
+                    panY: "translateY",
+                    projection: am5map.geoMercator(),
+                    homeGeoPoint: {
+                        longitude: -20,
+                        latitude: 25
+                    }
+                })
+            );
+
+            chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
+
+            const countries = chart.series.push(
+                am5map.MapPolygonSeries.new(root, {
+                    geoJSON: am5geodata_worldLow,
+                    exclude: ["AQ"]
+                })
+            );
+
+            countries.mapPolygons.template.setAll({
+                fill: am5.color(0x20263d),
+                stroke: am5.color(0x59627c),
+                strokeWidth: 0.7,
+                interactive: true,
+                tooltipText: "{name}"
+            });
+
+            countries.mapPolygons.template.states.create("hover", {
+                fill: am5.color(0x35d4dd)
+            });
+
+            const visitedCountries = chart.series.push(
+                am5map.MapPolygonSeries.new(root, {
+                    geoJSON: am5geodata_worldLow,
+                    include: ["US", "MX", "CA", "JP"]
+                })
+            );
+
+            visitedCountries.mapPolygons.template.setAll({
+                fill: am5.color(0xff5fbd),
+                stroke: am5.color(0xffffff),
+                strokeWidth: 1,
+                interactive: true,
+                tooltipText: "[bold]{name}[/]\n{story}"
+            });
+
+            visitedCountries.mapPolygons.template.states.create("hover", {
+                fill: am5.color(0x35d4dd)
+            });
+
+            visitedCountries.data.setAll([
+                {
+                    id: "US",
+                    story: "Born and raised here. I have explored 13 out of 50 states."
+                },
+                {
+                    id: "MX",
+                    story: "I went on a cruise tour. We did not do very much."
+                },
+                {
+                    id: "CA",
+                    story: "I spent a week in Vancouver and had a lot of fun walking around the city."
+                },
+                {
+                    id: "JP",
+                    story: "I visited Kyoto, Tokyo, Kanazawa, Toyama, Takayama, and Osaka."
+                }
+            ]);
+
+            chart.appear(1000, 100);
+        });
+    </script>
+
+</body>
+</html>
