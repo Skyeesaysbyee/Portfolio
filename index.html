@@ -3,108 +3,300 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The ePortfolio of Skyee Bucholz—PSU student, future public servant, creator, and automotive builder.">
-  <meta name="theme-color" content="#080b18">
-  <title>Skyee Bucholz — E-Portfolio</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <meta name="description" content="The personal website of Skyee Bucholz — student, creator, traveler, and car enthusiast.">
+  <meta name="theme-color" content="#090b17">
+  <title>Skyee Bucholz</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23090b17'/%3E%3Cpath d='M32 8 56 32 32 56 8 32Z' fill='none' stroke='%23a47cff' stroke-width='3'/%3E%3Cpath d='M22 37c3 3 7 5 11 5 5 0 9-2 9-6 0-9-19-3-19-13 0-5 4-8 10-8 4 0 8 1 11 4' fill='none' stroke='%2369e6f5' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Interactive world map -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Skyee Bucholz home">
-      <span class="brand-mark">SB</span>
-      <span>SKYEE<span class="accent">.PORTFOLIO</span></span>
+    <a class="logo" href="index.html" aria-label="Skyee Bucholz home">
+      <span class="logo-mark">SB</span>
+      <span>SKYEE<span class="purple">.HOME</span></span>
     </a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="resume.html">Résumé</a>
-      <a href="goals.html">Goals</a>
-      <a href="portfolio.html">PSU Portfolio</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#pages">Pages</a>
+      <a href="#travel">Travel</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <img class="hero-image" src="assets/mr2-portland-hero.webp" alt="A violet first-generation Toyota MR2 overlooking Portland at blue hour">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-photo" role="img" aria-label="Headline photograph of Skyee"></div>
       <div class="hero-shade"></div>
       <div class="hero-grid"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow"><span class="status-dot"></span> PORTLAND, OREGON · PSU ’30</p>
-        <h1>Building ideas.<br><span>Moving forward.</span></h1>
-        <p class="hero-copy">I’m Skyee—a political science and international affairs student interested in public service, global connection, and the discipline of making ambitious ideas real.</p>
+
+      <div class="hero-content">
+        <p class="eyebrow">PORTLAND, OREGON · 2026</p>
+        <h1>SKYEE<br><span>BUCHOLZ</span></h1>
+        <p>A little bit of everything.</p>
+        <a class="scroll-link" href="#about">Scroll to see more ↓</a>
+      </div>
+    </section>
+
+    <section id="about" class="about section-shell">
+      <div class="about-photo-wrap">
+        <p class="section-number">01 / ABOUT</p>
+        <div class="about-photo" role="img" aria-label="Photograph of Skyee Bucholz"></div>
+        <div class="photo-note">CURRENTLY AT PSU</div>
+      </div>
+
+      <div class="about-copy">
+        <p class="kicker">ABOUT ME</p>
+        <h2>I enjoy a little bit of everything.</h2>
+
+        <p>
+          My name is Skyee Bucholz. I enjoy a little bit of everything.
+          I love history, politics, geography, cars, music, gaming,
+          cinematography, the list could go on forever. I feel like I get
+          along with everybody. I try my best to be someone that everyone
+          would want to be with. I love figuring out problems and explaining
+          things to people willing to listen. I am currently a student at PSU.
+          I’ll be president one day.
+        </p>
+
         <div class="button-row">
-          <a class="button primary" href="portfolio.html">Explore my work <span aria-hidden="true">↗</span></a>
-          <a class="button secondary" href="resume.html">View résumé</a>
+          <a class="button primary" href="resume.html">
+            View résumé <span>↗</span>
+          </a>
+
+          <a class="button secondary" href="proud.html">
+            What I’m proud of <span>↗</span>
+          </a>
         </div>
       </div>
-      <p class="hero-index" aria-hidden="true">01 / 04</p>
     </section>
 
-    <section class="intro section-shell">
-      <div class="section-label reveal"><span>01</span><p>ABOUT</p></div>
-      <div class="intro-copy reveal">
-        <p class="display-quote">Curiosity is where meaningful change begins.</p>
-        <p>I’m drawn to the places where policy, culture, and real life meet. At Portland State University, I’m building the foundation for a career in government while studying international affairs, Japanese, and economics.</p>
+    <section id="pages" class="page-links section-shell">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">MORE ABOUT ME</p>
+          <h2>Pick a page</h2>
+        </div>
+
+        <p>I’ll build these pages out more later.</p>
       </div>
-      <dl class="quick-facts reveal">
-        <div><dt>FOCUS</dt><dd>Government & diplomacy</dd></div>
-        <div><dt>LANGUAGES</dt><dd>English · Japanese</dd></div>
-        <div><dt>OFF CAMPUS</dt><dd>Cars · motorsport · media</dd></div>
-      </dl>
+
+      <div class="photo-button-grid">
+        <a class="photo-button projects" href="projects.html">
+          <span class="page-id">01</span>
+
+          <div>
+            <p>Things I’ve made</p>
+            <h3>Projects</h3>
+          </div>
+
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="photo-button goals" href="goals.html">
+          <span class="page-id">02</span>
+
+          <div>
+            <p>What I want to do</p>
+            <h3>Life goals</h3>
+          </div>
+
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="photo-button car" href="car.html">
+          <span class="page-id">03</span>
+
+          <div>
+            <p>My 1987 Toyota</p>
+            <h3>My car</h3>
+          </div>
+
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="photo-button social" href="social.html">
+          <span class="page-id">04</span>
+
+          <div>
+            <p>Videos and posts</p>
+            <h3>Social media</h3>
+          </div>
+
+          <span class="arrow">↗</span>
+        </a>
+      </div>
     </section>
 
-    <section class="chapter section-shell">
-      <div class="section-heading reveal">
-        <div><p class="kicker">THE THREADS I’M FOLLOWING</p><h2>Four parts of one story.</h2></div>
-        <p>My work crosses public service, global learning, hands-on problem solving, and storytelling.</p>
+    <section id="travel" class="travel section-shell">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">WHERE I’VE BEEN</p>
+          <h2>My travel map</h2>
+        </div>
+
+        <p>Hover over a pink country to see what I did there.</p>
       </div>
-      <div class="chapter-grid">
-        <a class="chapter-card reveal" href="portfolio.html">
-          <span class="chapter-number">01</span><span class="chapter-icon">⌁</span>
-          <h3>Public service</h3><p>Learning how institutions, policy, and people shape one another.</p><span class="text-link">View PSU work →</span>
-        </a>
-        <a class="chapter-card reveal" href="goals.html">
-          <span class="chapter-number">02</span><span class="chapter-icon">◎</span>
-          <h3>Global perspective</h3><p>Studying language and culture with the goal of working across borders.</p><span class="text-link">See my goals →</span>
-        </a>
-        <a class="chapter-card reveal" href="portfolio.html#projects">
-          <span class="chapter-number">03</span><span class="chapter-icon">◇</span>
-          <h3>Build & learn</h3><p>Restoring an ’87 MR2 taught me patience, diagnosis, and how to learn in public.</p><span class="text-link">View projects →</span>
-        </a>
-        <a class="chapter-card reveal" href="resume.html">
-          <span class="chapter-number">04</span><span class="chapter-icon">◌</span>
-          <h3>Lead with effort</h3><p>Showing up, solving problems, and earning trust through consistent work.</p><span class="text-link">Read résumé →</span>
-        </a>
+
+      <div class="map-frame">
+        <div class="map-topline">
+          <span>4 COUNTRIES</span>
+          <span>13 / 50 U.S. STATES</span>
+        </div>
+
+        <div
+          id="world-map"
+          role="img"
+          aria-label="Interactive world map showing the United States, Mexico, Canada, and Japan in pink">
+        </div>
+      </div>
+
+      <div class="travel-cards" aria-label="Travel details">
+        <article>
+          <span>US</span>
+          <h3>United States</h3>
+          <p>Born and raised in the U.S. I’ve explored 13 out of 50 states.</p>
+        </article>
+
+        <article>
+          <span>MX</span>
+          <h3>Mexico</h3>
+          <p>I went during a cruise tour. We didn’t do much, but I can still say I’ve been.</p>
+        </article>
+
+        <article>
+          <span>CA</span>
+          <h3>Canada</h3>
+          <p>I spent a week in Vancouver. Staying out, walking around, and being in the city was so fun.</p>
+        </article>
+
+        <article>
+          <span>JP</span>
+          <h3>Japan</h3>
+          <p>I went to Kyoto, Tokyo, Kanazawa, Toyama, Takayama, and Osaka on a school trip. I met up with my girlfriend and got an OM tattoo.</p>
+        </article>
       </div>
     </section>
 
-    <section class="feature feature-image-right section-shell">
-      <div class="feature-copy reveal">
-        <p class="kicker">CURRENT CHAPTER</p>
-        <h2>From Portland<br>to the world.</h2>
-        <p>PSU is the launch point: a place to connect my interests in government, international relations, economics, and Japanese into work that matters beyond the classroom.</p>
-        <a class="button secondary" href="portfolio.html">Enter PSU portfolio <span aria-hidden="true">↗</span></a>
-      </div>
-      <figure class="image-frame reveal">
-        <img src="assets/psu-study.webp" alt="A student studying international affairs and Japanese at an urban Portland campus table" loading="lazy">
-        <figcaption><span>02</span> Study, context, connection.</figcaption>
-      </figure>
-    </section>
+    <section class="quote-section section-shell">
+      <span class="quote-mark">“</span>
+      <blockquote>
+        I’m a travelin’ man, movin’ through places... space and time.
+      </blockquote>
 
-    <section class="cta section-shell reveal">
-      <p class="kicker">NEXT DESTINATION</p>
-      <h2>Progress is built<br>one deliberate step at a time.</h2>
-      <a class="button primary" href="goals.html">See where I’m headed <span aria-hidden="true">→</span></a>
+      <p>
+        I still have a lot of places to go, but I always want somewhere
+        to come back to.
+      </p>
+
+      <cite>— Mac Miller, excerpt</cite>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="brand" href="index.html"><span class="brand-mark">SB</span><span>SKYEE<span class="accent">.PORTFOLIO</span></span></a>
-    <p>Built in Portland with curiosity and momentum.</p>
+  <footer>
+    <a class="logo" href="index.html">
+      <span class="logo-mark">SB</span>
+      <span>SKYEE<span class="purple">.HOME</span></span>
+    </a>
+
+    <p>Made in Portland.</p>
     <a href="#main">Back to top ↑</a>
   </footer>
+
+  <script>
+    am5.ready(function () {
+      const root = am5.Root.new("world-map");
+
+      root.setThemes([
+        am5themes_Animated.new(root)
+      ]);
+
+      const chart = root.container.children.push(
+        am5map.MapChart.new(root, {
+          projection: am5map.geoEqualEarth(),
+          panX: "rotateX",
+          panY: "translateY",
+          wheelY: "zoom",
+          minZoomLevel: 1,
+          maxZoomLevel: 5
+        })
+      );
+
+      const countries = chart.series.push(
+        am5map.MapPolygonSeries.new(root, {
+          geoJSON: am5geodata_worldLow,
+          exclude: ["AQ"]
+        })
+      );
+
+      countries.mapPolygons.template.setAll({
+        fill: am5.color(0x252a3b),
+        stroke: am5.color(0x090b17),
+        strokeWidth: 0.7,
+        tooltipText: "[bold]{name}[/]\n{story}",
+        interactive: true
+      });
+
+      countries.mapPolygons.template.states.create("hover", {
+        fill: am5.color(0x3d4561)
+      });
+
+      const visited = ["US", "MX", "CA", "JP"];
+
+      countries.mapPolygons.template.adapters.add(
+        "fill",
+        function (fill, target) {
+          const id = target.dataItem
+            ? target.dataItem.get("id")
+            : "";
+
+          return visited.includes(id)
+            ? am5.color(0xff5fbd)
+            : fill;
+        }
+      );
+
+      countries.data.setAll([
+        {
+          id: "US",
+          name: "United States",
+          story: "Born and raised here. I’ve explored 13 out of 50 states."
+        },
+        {
+          id: "MX",
+          name: "Mexico",
+          story: "I went during a cruise tour. We didn’t do much, but I can still say I’ve been."
+        },
+        {
+          id: "CA",
+          name: "Canada",
+          story: "I spent a week in Vancouver. Staying out, walking around, and being in the city was so fun."
+        },
+        {
+          id: "JP",
+          name: "Japan",
+          story: "I visited Kyoto, Tokyo, Kanazawa, Toyama, Takayama, and Osaka. I met up with my girlfriend and got an OM tattoo."
+        }
+      ]);
+
+      chart.set(
+        "zoomControl",
+        am5map.ZoomControl.new(root, {})
+      );
+
+      countries.appear(800);
+      chart.appear(800, 100);
+    });
+  </script>
 </body>
 </html>
